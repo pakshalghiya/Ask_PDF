@@ -7,7 +7,7 @@ from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 
-os.environ['OPENAI_API_KEY'] = "YOUR API KEY HERE"
+os.environ['OPENAI_API_KEY'] = "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"
 
 
 def main():
