@@ -7,7 +7,7 @@ from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "YOUR KEY HERE"
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
          for page in reader.pages:
              text =text + page.extract_text()
 
-        #  st.write(text)
+         st.write(text)
 
         # We can not feed whole Data ofthe PDF and Expect togive answerts by the Lnaguage Model. 
         # So, It Is necessary to divide whole Data Into Chunks and let Language Model decide where our relevent information resides 
